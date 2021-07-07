@@ -1,0 +1,11 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+       - ls | grep index.html
+       
+artifacts:
+  files:
+    - '**/*'
+  name: myname-$(date +%Y-%m-%d)
